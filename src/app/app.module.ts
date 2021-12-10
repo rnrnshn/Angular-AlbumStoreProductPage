@@ -21,7 +21,7 @@ import { ProductService } from './product.service';
     HttpModule
   ],
   providers: [
-    ProductService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })
