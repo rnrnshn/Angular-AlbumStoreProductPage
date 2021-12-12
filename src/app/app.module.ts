@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { ProductDescriptionComponent } from './product-description/product-descr
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
